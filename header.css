@@ -1,0 +1,451 @@
+a {
+    text-decoration: none;
+    background-blend-mode: difference;
+}
+
+a:link {
+    color: #000;
+    background-blend-mode: difference;
+}
+
+a:visited {
+    color: #000;
+    background-blend-mode: difference;
+}
+
+a:hover {
+    color: #000;
+    background-blend-mode: difference;
+}
+
+a:active {
+    color: #000;
+    background-blend-mode: difference;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+.inner {
+    margin: 0 3.25em;
+}
+
+nav {
+    height: 5.63em;
+}
+
+nav h1 {
+    vertical-align: middle;
+}
+
+nav img {
+    /* margin-top: 1.56em; */
+    margin-top: 25px;
+}
+
+nav #logo2 {
+    display: none;
+}
+
+header {
+    top: 0;
+    height: 5.63em;
+    width: 100vw;
+    background-size: contain;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    z-index: 400;
+    position: fixed;
+    font-family: 'Montserrat';
+}
+.w_logo{
+    
+}
+.m_logo{
+    display: none;
+}
+nav .headerBtn li a {
+    color: #fff;
+}
+nav .headerBtn {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%, 0);
+}
+
+nav .headerBtn li {
+    display: inline;
+}
+
+nav .headerBtn li button {
+    font-weight: 600;
+    cursor: pointer;
+}
+
+nav .headerBtn button {
+    height: 2.13em;
+    width: 8.25em;
+    border: none;
+    border-radius: 1.88em;
+    font-family: 'Montserrat';
+    font-size: 1em;
+    margin: 1.56em 0.34em;
+}
+
+nav .basicBtn {
+    background: #222222;
+    color: #fff;
+}
+
+nav .metaBtn {
+    background: rgba(34, 34, 34, 0.05);
+    color: #222;
+}
+
+nav .navList {
+    margin: 2.31em 0;
+    position: absolute;
+    top: 0;
+    right: 12vw;
+}
+
+nav .navList li {
+    display: inline;
+    font-family: 'Montserrat';
+    font-size: calc(100vw * 16 / 1920);
+    margin: 0 calc(100vw * 29.5 / 1920);
+    font-weight: 600;
+}
+
+nav .hamburgerBtn {
+    position: absolute;
+    width: calc(100vw * 60 / 1920);
+    height: calc(100vw * 60 / 1920);
+    top: calc(100vw * 15 / 1920);
+    right: calc(100vw * 60 / 1920);
+    transition-duration: 0.5s;
+}
+
+nav .hamburgerBtn .icon {
+    transition-duration: 0.5s;
+    position: absolute;
+    height: 0px;
+    width: calc(100vw * 60 / 1920);
+    top: calc(100vw * 30 / 1920);
+    background-color: #212121;
+    z-index: 3;
+}
+
+nav .hamburgerBtn .icon:before {
+    transition-duration: 0.5s;
+    position: absolute;
+    width: calc(100vw * 60 / 1920);
+    height: calc(100vw * 9 / 1920);
+    background-color: #000000;
+    content: "";
+    top: calc(100vw * -10 / 1920);
+    transform: rotate(10deg);
+}
+
+nav .hamburgerBtn .icon:after:hover {
+    background-color: #FF005C;
+}
+
+nav .hamburgerBtn .icon:after {
+    transition-duration: 0.5s;
+    position: absolute;
+    width: calc(100vw * 60 / 1920);
+    height: calc(100vw * 9 / 1920);
+    background-color: #838383;
+    content: "";
+    top: calc(100vw * 10 / 1920);
+    transform: rotate(-5deg);
+}
+
+nav .hamburgerBtn.open .icon {
+    transition: 0.5s;
+    z-index: 600;
+}
+
+nav .hamburgerBtn.open .icon:before {
+    transform: rotate(34.41deg) translate(0, calc(100vw * 10 / 1920));
+    background-color: #FF005C;
+}
+
+nav .hamburgerBtn.open .icon:after {
+    transform: rotate(-34.41deg) translate(calc(100vw * 2 / 1920), calc(100vw * -12 / 1920));
+    background-color: #A533F6;
+}
+
+nav .hamburgerBtn:hover {
+    cursor: pointer;
+}
+
+nav .menu {
+    display: none;
+    background: #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 100vw;
+    transition: all 1s;
+    /* margin-left: 100px; */
+    overflow: hidden;
+}
+
+nav .menu div.menuAllWrap {
+    width: calc(100vw * 1240 / 1920);
+    height: calc(100vw * 600 / 1920);
+    /* margin-left: 335px;
+    margin-top: 200px; */
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    left: 50%; right: 50%;
+    bottom:50%; top:50%;
+    transform: translate(-50%, -50%);
+}
+
+nav .menu ul.menuWrap1 {
+    /* position: absolute; */
+    display: inline-block;
+    height: calc(100vw * 500 / 1920);
+    /* margin-right: 173px; */
+}
+
+nav .menu ul.menuWrap2 {
+    /* position: absolute; */
+    display: inline-block;
+    /* left: 462px; */
+    height: calc(100vw * 500 / 1920);
+}
+
+nav .menu.active {
+    display: block;
+    animation: menu forwards 1s;
+}
+
+@keyframes menu {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 100vw;
+    }
+}
+nav .menu .menuAllWrap li {
+    font-family: 'Montserrat';
+    font-size: calc(100vw * 72 / 1920);
+    width: auto;
+    height: 30%;
+    padding: calc(100vw * 27 / 1920) calc(100vw * 50 / 1920);
+    font-weight: 600;
+    display: list-item;
+    text-align: -webkit-match-parent;
+    z-index: 400;
+}
+
+nav .menu .menuAllWrap li.menu01 {
+    width: calc(100vw * 417.34 / 1920);
+}
+
+.menu01:hover {
+    background-image: url("../img/header/header_curriculum.png");
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+.menuAllWrap li.menu02 {
+    width: calc(100vw * 346.08 / 1920);
+}
+
+.menuAllWrap li.menu02 div span {
+    margin-left: calc(100vw * 10 / 1920);
+    padding: calc(100vw * 4 / 1920) calc(100vw * 10 / 1920);
+    background-color: #FFDD2D;
+    border-radius: calc(100vw * 50 / 1920);
+    font-size: calc(100vw * 16 / 1920);
+    font-weight: 500;
+}
+
+.menu02:hover {
+    background-image: url("../img/header/header_project.png");
+    background-size: 45%;
+    background-position: calc(100vw * 200 / 1920) 0;
+    background-repeat: no-repeat;
+    /* width: 88px; */
+}
+
+nav .menu .menuAllWrap li.menu03 {
+    width: calc(100vw * 400.95 / 1920);
+}
+
+nav .menu .menuAllWrap li.menu03 div span {
+    margin-left: calc(100vw * 10 / 1920);
+    padding: calc(100vw * 4 / 1920) calc(100vw * 10 / 1920);
+    color: #fff;
+    background-color: #1B1B1B;
+    border-radius: calc(100vw * 50 / 1920);
+    font-size: calc(100vw * 16 / 1920);
+    font-weight: 500;
+}
+
+.menu03:hover {
+    background-image: url("../img/header/header_student.png");
+    background-size: 60%;
+    background-position: calc(100vw * 150 / 1920) calc(100vw * 70 / 1920);
+    background-repeat: no-repeat;
+}
+
+nav .menu .menuAllWrap li.menu04 {
+    width: calc(100vw * 257.3 / 1920);
+}
+
+.menu04:hover {
+    background-image: url("../img/header/header_sticker.png");
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+nav .menu .menuAllWrap li.menu05 {
+    width: calc(100vw * 407 / 1920);
+}
+
+.menu05:hover {
+    background-image: url("../img/header/header_guestbook.png");
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+nav .menu .menuAllWrap li.menu06 {
+    width: calc(100vw * 268.59 / 1920);
+}
+
+.menu06:hover {
+    background-image: url("../img/header/header_behind.png");
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+
+nav .menu a {
+    height: calc(100vw * 80 / 1920);
+}
+
+nav .menu div {
+    font-size: calc(100vw * 24 / 1920);
+}
+
+/* 스크롤 탑 */
+#scrollTop:hover {
+    text-decoration: none;
+}
+
+#scrollTop {
+    width: calc(100vw * 60 / 1920);
+    height: calc(100vw * 60 / 1920);
+    backdrop-filter: blur(5px);
+    background-color: #ffffff00;
+    border: solid calc(100vw * 2 / 1920) #1B1B1B;
+    text-align: center;
+    position: fixed;
+    right: calc(100vw * 60 / 1920);
+    bottom: calc(100vw * 60 / 1920);
+    cursor: pointer;
+    z-index: 500;
+    border-radius: 50%;
+}
+
+#scrollTop img {
+    margin-top: calc(100vw * 16 / 1920);
+}
+
+
+
+@media (max-width: 768px) {
+
+    header{
+        position: relative;
+        background-color: #fff;
+        height: calc(100vw * 178 / 768);
+    }
+    .w_logo{
+        display: none;
+    }
+    .m_logo{
+        width: calc(100vw * 267 / 768); height: auto;
+        display: block;
+    
+    }
+    
+    .m_logo img {
+        width: calc(100vw * 267 / 768);
+    }
+
+    .inner {
+        height: calc(100vw * 178 / 768);
+        margin: 0 calc(100vw * 40 / 768);
+        border-bottom: solid 2px #000;
+    }
+
+    nav {
+        height: calc(100vw * 80 / 768);
+    }
+
+    nav img {
+        margin-top: calc(100vw * 70 / 768);
+    }
+
+    nav #logo1 {
+        display: none;
+    }
+
+    nav #logo2 {
+        display: block;
+    }
+
+    nav .headerBtn {
+        display: none;
+    }
+
+    nav .hamburgerBtn {
+        display: none;
+    }
+
+    nav .navList {
+        margin-top: 15.8vw;
+        right: 6vw;
+    }
+
+    nav .navList li {
+        margin: 0;
+    }
+
+    nav .navList li a {
+        color: #AAAAAA;
+        font-size:  calc(100vw * 24 / 768);
+    }
+
+    nav .navList li a:hover {
+        color: #1B1B1B;
+    }
+
+    nav .navList li:nth-child(1) {
+        /* margin-top: 15.8vw;
+        font-size:  0.03 em; */
+        margin-right: calc(100vw * 50 / 768);
+    }
+
+    
+
+}
+

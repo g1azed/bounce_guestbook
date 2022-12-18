@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: content-box;
+    /* font-size: 20px; */
+
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/*
+font-family: 'Montserrat', sans-serif;
+
+*/
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    /* font-weight: 400;
+    font-style: normal; */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.ad{
+    position: absolute;
+    /* width: 50px; height: 10px; */
+    right: 0; top: 350px;
+    display: none; 
+    /* admin */
+}
+.container{
+    margin-top: 215px;
+}
+
+.write_section {
+    margin: 0 3.125% 0 3.125%;
+    position: relative;
+
+    /* border: 2px solid red; */
+}
+
+.form_top {
+    width: 100%;
+    height: 50px;
+    display: block;
+
+    /* border: 2px solid black; */
+}
+
+#now_date {
+    display: inline-block;
+    width: 10.8%;
+    height: 30px;
+    text-align: start;
+
+    font-family: 'Montserrat';
+    color: #191919;
+    font-weight: 500;
+    font-size: 1.5em;
+    border-right: 2px solid #191919;
+    letter-spacing: -0.05em;
+
+    padding-right: 30px;
+
+}
+
+#nickname {
+    display: inline-block;
+    /* width: 88.5%; */
+    height: 40px;
+    text-align: start;
+    border: none;
+    font-size: 1.5em;
+    font-family: 'Pretendard';
+    letter-spacing: -0.05em;
+    margin-left: 50px;
+}
+
+#contents {
+    display: inline-block;
+    width: 100%;
+    height: 140px;
+    border: none;
+    border-top: 2px solid #191919;
+    font-size: 1.5em;
+    font-family: 'Pretendard';
+    letter-spacing: -0.05em;
+}
+.form_bottom .btn {
+    all: unset;
+    text-align: center;
+    font-size: 1.5em;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    letter-spacing: -0.05em;
+    width: 100%;
+    height: 75px;
+    border-radius: 5px;
+    background-color: #191919;
+    color: #fff;
+}
+
+#content_list{
+    display: flex;
+    margin: 85px 2.125% 0 2.125%;
+    justify-content: space-between;
+}
+.content_list {
+    display: inline-block;
+    width: 25%;
+    margin: 0 1% 0 1%;
+    /* display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row-reverse; */
+}
+
+.get_box {
+    width: calc(100% - 60px); height: auto;
+    padding: 40px 30px 30px 30px;
+    margin-bottom: 30px;
+    color: #fff;
+    letter-spacing: -0.02em;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.get_box.box0{
+    background-color: #ff004e;
+}
+.get_box.box1{
+    background-color: #FFDD2D;
+    color: #D27D00;
+}
+.get_box.box2{
+    background-color: #A533F6;
+}
+.get_box.box3{
+    background-color: #05C360;
+}
+.get_box.box4{
+    background-color: #0066FF;
+}
+.text {
+    margin-bottom: 30px;
+}
+.user_name{
+    display: inline;
+}
+.user_date{
+    display: inline;
+    float: right;
+}
+
+
+#delete {
+    float: right;
+}
+p{ display: inline-block;}
